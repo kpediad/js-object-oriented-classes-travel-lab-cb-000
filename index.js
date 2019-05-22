@@ -26,7 +26,7 @@ class Route {
   }
 
   blocksTravelled() {
-    return Math.abs(parseInt(endingLocation.vertical, 10) - parseInt(beginningLocation.vertical, 10)) + Math.abs(eastWest.indexOf(beginningLocation.horizontal) - eastWest.indexOf(endingLocation.horizontal));
+    return Math.abs(parseInt(this.endingLocation.vertical, 10) - parseInt(this.beginningLocation.vertical, 10)) + Math.abs(eastWest.indexOf(this.beginningLocation.horizontal) - eastWest.indexOf(this.endingLocation.horizontal));
   }
 
   estimatedTime(peakHours) {
