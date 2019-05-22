@@ -14,10 +14,6 @@ class Driver {
     this.startDate = new Date(startDate);
   }
 
-  startDate(date) {
-    return new Date(date);
-  }
-
   yearsExperienceFromBeginningOf(year) {
     return year - startDate().getFullYear();
   }
